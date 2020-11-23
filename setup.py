@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="AirDataUAV",
-    version="0.0.1",
+    version="0.0.3",
     author="Jan-Hendrik Ewers",
     author_email="jh.ewers@gmail.com",
     description="A nice interface to AirDataUAV CSV files",
