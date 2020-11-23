@@ -1,6 +1,7 @@
 on:
   push:
-    # Sequence of patterns matched against refs/tags
+    branches:
+      - master
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
@@ -8,6 +9,7 @@ name: Create Release
 
 jobs:
   build:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     name: Create Release
     runs-on: ubuntu-latest
     steps:
