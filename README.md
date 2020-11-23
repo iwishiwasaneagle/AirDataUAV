@@ -1,5 +1,6 @@
 # AirData UAV Objects
-[![PyPI version](https://badge.fury.io/py/AirDataUAV.svg)](https://badge.fury.io/py/AirDataUAV)
+[![PyPI version](https://badge.fury.io/py/AirDataUAV.svg)](https://badge.fury.io/py/AirDataUAV)  
+
 Started to create a neat interface for the converted data from [https://airdata.com/](https://airdata.com/).
 
 ## Current data columns

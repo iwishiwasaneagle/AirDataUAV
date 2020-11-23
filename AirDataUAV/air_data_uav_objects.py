@@ -2,6 +2,8 @@ import csv
 import numpy as np
 import utm
 
+MPH_TO_MS = 0.44704
+FT_TO_M = 0.3048
 
 MPH_TO_MS = 0.44704
 FT_TO_M = 0.3048
