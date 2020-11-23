@@ -8,7 +8,11 @@ Started to create a neat interface for the converted data from [https://airdata.
  - latitude  
  - longitude  
  - height_above_takeoff(feet)  
- - 
+ - xSpeed(mph)  
+ - ySpeed(mph)  
+ - zSpeed(mph)
+ - speed(mph)  
+ 
 ### Todo
 
  - datetime(utc)  
@@ -25,12 +29,9 @@ Started to create a neat interface for the converted data from [https://airdata.
  - max_ascent(feet)  
  - max_speed(mph)  
  - max_distance(feet)  
- -  xSpeed(mph)  
- -  ySpeed(mph)  
- -  zSpeed(mph)  
- -  compass_heading(degrees)  
- -  pitch(degrees)  
- -  roll(degrees)  
+ - compass_heading(degrees)  
+ - pitch(degrees)  
+ - roll(degrees)  
  - isPhoto  
  - isVideo  
  - rc_elevator  
