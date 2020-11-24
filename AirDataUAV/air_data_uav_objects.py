@@ -5,9 +5,6 @@ import utm
 MPH_TO_MS = 0.44704
 FT_TO_M = 0.3048
 
-MPH_TO_MS = 0.44704
-FT_TO_M = 0.3048
-
 KEYS = (
     'latitude',
     'longitude',
@@ -46,10 +43,13 @@ class UAVData:
     def _latlng_to_local(self):
         xy = utm.from_latlon(np.array(self.latitude),np.array(self.longitude))
 
-        # Normalize to starting position (i.e. home)
-        self.x = np.copy(xy[0]-xy[0][0])
-        self.y = np.copy(xy[1]-xy[1][0])
+        self.utm_zone_number = xy[2]
+        self.utm_zone_letter = xy[3]
+        self.utm = np.copy([xy[0],xy[1]])
+
 
 
 if __name__ == "__main__":
-    a = UAVData('/home/jhewers/Documents/meng_project/ps_data/2020-11-19_14-18-29.csv')    
+    a = UAVData('/home/jhewers/Documents/meng_project/ps_data/2020-11-19_14-18-29.csv')  
+    
+    print(a.utm.shape)
